@@ -3,11 +3,14 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FaArrowRight, FaChevronDown } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
   // ? About Routing in Next.js
-  // TODO: fix animation for dropdown
+  // TODO: fix animation for dropdown And make it responsive😡
+
   const links = [
     { name: "Home", path: "/" },
     {
@@ -34,20 +37,16 @@ const Navbar = () => {
     <div className="bg-white shadow-lg sticky top-0 z-50 transition-all duration-500">
       <div className="flex items-center justify-between w-full h-20">
         <div className="flex items-center pl-4 lg:pl-8">
-          <h1 className="text-3xl font-bold text-black">Logic Systems</h1>
+          <h1 className="text-3xl font-bold text-dark">Logic Systems</h1>
         </div>
-        <div className="lg:hidden">
-          <button
-            type="button"
-            onClick={() => setNavbarOpen(!navbarOpen)}
-            className="text-black focus:outline-none"
-            aria-label="Toggle navigation"
-          >
-            <span className="block w-6 h-0.5 bg-black mb-1" />
-            <span className="block w-6 h-0.5 bg-black mb-1" />
-            <span className="block w-6 h-0.5 bg-black" />
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => setNavbarOpen(!navbarOpen)}
+          className="lg:hidden pr-4"
+          aria-label="Toggle navigation"
+        >
+          <GiHamburgerMenu className="text-3xl font-bold text-dark" />
+        </button>
         <div
           className={`lg:flex items-center ${navbarOpen ? "block" : "hidden"} w-full lg:w-auto`}
         >

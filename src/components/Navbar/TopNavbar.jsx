@@ -1,13 +1,6 @@
 import React from "react";
-import Link from "next/link";
-import {
-  FaPhoneAlt,
-  FaEnvelope,
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import SocialMedia from "../SocialMedia";
 
 const TopNavbar = () => (
   <div className="bg-dark text-light px-0 py-4">
@@ -23,29 +16,8 @@ const TopNavbar = () => (
           <span className="text-light">info@example.com</span>
         </div>
       </div>
-      <div className="flex items-center space-x-2">
-        <span className="text-light">Follow Us:</span>
-        <Link href="https://www.facebook.com">
-          <div className="p-1 text-light hover:text-secondary focus:outline-none">
-            <FaFacebookF />
-          </div>
-        </Link>
-        <Link href="https://www.twitter.com">
-          <div className="p-1 text-light hover:text-secondary focus:outline-none">
-            <FaTwitter />
-          </div>
-        </Link>
-        <Link href="https://www.linkedin.com">
-          <div className="p-1 text-light hover:text-secondary focus:outline-none">
-            <FaLinkedinIn />
-          </div>
-        </Link>
-        <Link href="https://www.instagram.com">
-          <div className="p-1 text-light hover:text-secondary focus:outline-none">
-            <FaInstagram />
-          </div>
-        </Link>
-      </div>
+      {/* Can display about offers here */}
+      <SocialMedia />
     </div>
   </div>
 );
