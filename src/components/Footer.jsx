@@ -38,7 +38,7 @@ const Footer = () => (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[3fr,2fr,2fr,2fr] gap-6">
           <div className="lg:px-4 mb-4">
             <h3 className="text-2xl font-bold mb-4 md:mb-6">Logic Systems</h3>
-            <p className="text-light mb-4 w-4/5">
+            <p className="text-light mb-4">
               Your quote about the company goes here. Inspiring and concise.
             </p>
             <SocialMedia />

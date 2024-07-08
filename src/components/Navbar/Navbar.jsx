@@ -10,6 +10,7 @@ const Navbar = () => {
 
   // ? About Routing in Next.js
   // TODO: fix animation for dropdown And make it responsive😡
+  // TODO: fix selected link color
 
   const links = [
     { name: "Home", path: "/" },

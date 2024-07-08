@@ -4,7 +4,6 @@ import SocialMedia from "../SocialMedia";
 
 const TopNavbar = () => (
   <div className="bg-dark text-light px-0 py-4">
-    {/* This div remains visible but its content is hidden on small and medium screens */}
     <div className="hidden md:hidden lg:flex justify-between px-5">
       <div className="flex items-center space-x-4">
         <div className="flex items-center space-x-2">
@@ -16,8 +15,10 @@ const TopNavbar = () => (
           <span className="text-light">info@example.com</span>
         </div>
       </div>
-      {/* Can display about offers here */}
-      <SocialMedia />
+      <div className="flex items-center gap-2">
+        <span className="text-light">Follow Us:</span>
+        <SocialMedia />
+      </div>
     </div>
   </div>
 );

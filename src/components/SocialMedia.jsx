@@ -9,7 +9,6 @@ import {
 
 const SocialMedia = () => (
   <div className="flex items-center space-x-2">
-    <span className="text-light">Follow Us:</span>
     <Link href="https://www.facebook.com">
       <div className="p-2 text-light hover:text-secondary focus:outline-none rounded-full border border-light">
         <FaFacebookF />
